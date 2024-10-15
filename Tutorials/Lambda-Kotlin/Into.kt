@@ -10,7 +10,8 @@ fun trickFunction1()
 val treat: () -> Unit = {
     println("Have a treat!")
 }
-/////////////////////////////
+
+//////////////////////////////////////
 fun main() {
     val trickFunction = trick
     trick()
@@ -18,5 +19,12 @@ fun main() {
     println("-----------------")
     val trickFunction2 = ::trickFunction1
     trickFunction2()
+    println("######## Function #########")
+    print("treat() : "); treat();
+    println("   -----    ")
+    print("trick() : "); trick();
+    println("   -----    ")
+    print("trickFunction1 : "); trickFunction1();
+
 
 }
