@@ -1,7 +1,7 @@
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
-class Note (initialValue: Int,private val minValue: Int,private val maxValue: Int) : ReadWriteProperty<Any?, Int> {
+class Note(initialValue: Int,private val minValue: Int,private val maxValue: Int) : ReadWriteProperty<Any?, Int> {
 
     var  fieldData = initialValue
 
